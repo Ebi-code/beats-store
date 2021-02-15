@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/nouislider.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <!-- Hero -->
+    <section class="hero container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Navbar -->
+                <div class="col-md-12">
+                    <nav class="navbar">
+                        <div class="left-module">
+                            <a href="#">
+                                <span><i class="fas fa-bars"></i></span>
+                                <span class="menu">menu</span>
+                            </a>
+                        </div>
+                        <div class="middle-module">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="right-module">
+                            <a class="search" href="#"><i class="fas fa-search"></i></a>
+                            <span class="cart-holder">
+                                <button type="button" class="btn btn-plain show-cart-btn" data-bs-toggle="modal"
+                                    data-bs-target="#cart-modal">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <small class="cart-counter badge rounded-pill bg-dark">0</small>
+                                </button>
+                            </span>
+                        </div>
+                    </nav>
+                </div>
+                <!-- End of navbar -->
+                <!-- Banner -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <header class="banner">
+                                <ul class="tags">
+                                    <li class="tag"><a href="#">technique</a></li>
+                                </ul>
+                                <h1 class="title">got no string</h1>
+                                <p class="description">
+                                    Get the most out of your music with an award-winning, emotionally
+                                    charged Beats listening experience.
+                                </p>
+                                <div class="button">
+                                    <a href="#" class="btn border-btn" role="button"><span>show
+                                            item</span><span><i class="fas fa-chevron-right"></i></span></a>
+                                </div>
+                                <ul class="thumbnail-videos">
+                                    <li class="thumbnail-video">
+                                        <img src="assets/videos/banner-video-1.jpg" alt="banner tumbnail video">
+                                        <a href="#" class="play-btn"></a>
+                                    </li>
+                                    <li class="thumbnail-video">
+                                        <img src="assets/videos/banner-video-2.jpg" alt="banner tumbnail video">
+                                        <a href="#" class="play-btn"></a>
+                                    </li>
+                                </ul>
+                            </header>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div class="slider">
+                                <div class="banner-img">
+                                    <img src="assets/images/banner-img-1.png" alt="banner products" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Banner -->
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-box">
+                        <ul class="tags">
+                            <li class="tag"><a href="#">featured</a></li>
+                        </ul>
+                        <h2 class="title">avilable colors</h2>
+                        <div class="button">
+                            <a href="#" class="btn plain-btn">full catalogue<span>
+                                    <i class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feachured -->
+    <section class="container">
+        <div class="colors-products">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="colors-box">
+                        <ul class="colors-list nav" id="colors-list-holodor" role="tablist"></ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="color-images tab-content" id="images-tab-holder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Feachured -->
+    <!-- Full width video -->
+    <section class="container-fluid nopadding">
+        <div class="video-player-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="video-player">
+                        <img class="media-player video-item" data-src="assets/videos/video-1.mp4"
+                            src="assets/videos/video-full-width.png" alt="video player pooster">
+                        <a href="#" class="play-btn" id="video-play-btn"></a>
+                        <div class="video-list">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <ul class="thumbnail-videos">
+                                            <li class="thumbnail-video">
+                                                <img src="assets/videos/banner-video-1.jpg" alt="banner tumbnail video"
+                                                    class="video-item" data-info="video name"
+                                                    data-src="assets/videos/video-1.mp4">
+                                            </li>
+                                            <li class="thumbnail-video">
+                                                <img src="assets/videos/banner-video-2.jpg" alt="banner tumbnail video"
+                                                    class="video-item" data-info="video name"
+                                                    data-src="assets/videos/video-1.mp4">
+                                            </li>
+                                            <li class="thumbnail-video">
+                                                <img src="assets/videos/banner-video-3.jpg" alt="banner tumbnail video"
+                                                    class="video-item" data-info="video name"
+                                                    data-src="assets/videos/video-1.mp4">
+                                            </li>
+                                            <li class="thumbnail-video-btn">
+                                                <a href="#" class="btn plain-btn">more <i
+                                                        class="fas fa-chevron-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="video-controls">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Full width video -->
+    <!-- Products -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="title mb-2">our products</h2>
+                <aside class="products-sidebar mb-5">
+                    <nav class="collapse-nav" id="sidebar-category">
+                        <p>
+                            <button type="button" class="btn plain-btn" id="all-product">all</button>
+                        </p>
+                        <template id="category-template">
+                            <li class="category-item">
+                                <button type="button" class="btn plain-btn category-item-btn"></button>
+                                <div class="collapse">
+                                    <ul class="categories-list ms-3">
+                                        <li class="category-list mb-3">
+                                            <button type="button" class="btn btn-plain category-item-btn"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-range">
+                                <button type="button" class="btn btn-plain" data-bs-toggle="collapse"
+                                    data-bs-target="#multi-collapse-range" aria-controls="multi-collapse-range"
+                                    aria-expanded="true"></button>
+                                <div class="collapse show" id="multi-collapse-range">
+                                    <ul class="item-list price-range ms-3">
+                                        <li class="price-text mb-3">
+                                            <input type="text" name="price-range" id="price-value" value="0" readonly>
+                                        </li>
+                                        <li class="mb-3 ms-2">
+                                            <div class="slider-price" id="slider"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-colors">
+                                <button type="button" class="btn btn-plain" data-bs-toggle="collapse"
+                                    data-bs-target="#multi-collapse-color" aria-controls="multi-collapse-color"
+                                    aria-expanded="true"></button>
+                                <div class="collapse" id="multi-collapse-color">
+                                    <ul class="items-list colors-spot ms-3"></ul>
+                                </div>
+                            </li>
+                        </template>
+                        <ul class="collapse-list" id="category-holder"></ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="col-md-9">
+                <!-- Products item -->
+                <main>
+                    <div class="products-list">
+                        <nav class="sorting">
+                            <div class="left-module">
+                                <span class="text">sort by:</span>
+                                <div class="dropdown">
+                                    <button class="btn btn-plain" type="button" id="dropdown-sort"
+                                        aria-expanded="false">
+                                        price
+                                        <span><i class="fas fa-chevron-down"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown-sort">
+                                        <li><a class="dropdown-item" href="#">category</a></li>
+                                        <li><a class="dropdown-item" href="#">color</a></li>
+                                        <li><a class="dropdown-item" href="#">stars</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right-module">
+                                <span><i class="fas fa-bars"></i></span>
+                                <span><i class="fas fa-th"></i></span>
+                            </div>
+                        </nav>
+                        <!-- Single product -->
+                        <template id="product-template">
+                            <article class="product">
+                                <div class="img-container">
+                                    <img src="" class="product-img">
+                                </div>
+                                <h3>
+                                    <button type="button" class="btn btn-plain show-card-btn product-name"></button>
+                                </h3>
+                                <p class="description"></p>
+                                <div class="price-stars">
+                                    <h4><span class="symbol">$</span><span class="price"></span></h4>
+                                    <ul class="stars">
+                                        <li><i class="fas fa-star  stared"></i></li>
+                                        <li><i class="fas fa-star  stared"></i></li>
+                                        <li><i class="fas fa-star  stared"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </template>
+                        <div class="products-center" id="product-holder"></div>
+                        <!-- End of Single product -->
+                        <!-- CARD MODAL PAGE -->
+                        <template id="card-template">
+                            <div class="modal fade card-template" id="card-modal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="container-fluid">
+                                        <div class="row align-items-center">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="col-sm-6">
+                                                        <div class="product-info">
+                                                            <h2 class="title product-name-card"></h2>
+                                                            <ul class="stars">
+                                                                <li><i class="fas fa-star  stared"></i></li>
+                                                                <li><i class="fas fa-star  stared"></i></li>
+                                                                <li><i class="fas fa-star  stared"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                                <li><i class="fas fa-star"></i></li>
+                                                            </ul>
+                                                            <p class="description"></p>
+                                                            <div class="amount-color">
+                                                                <div class="amounts">
+                                                                    <select name="amount" class="amount">
+                                                                        <option value="1" selected>1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="more-amount">need more!?</option>
+                                                                    </select>
+                                                                    <input type="text" name="amount"
+                                                                        class="amount d-none" value=""
+                                                                        placeholder="type your amount">
+                                                                </div>
+                                                                <div class="color-select">
+                                                                    <select name="color" class="color">
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="buttons">
+                                                                <button class="btn solid-btn add-cart-btn">add to
+                                                                    cart</button>
+                                                                <span class="like"><i class="far fa-heart"></i></span>
+                                                            </div>
+                                                            <div class="section-line">
+                                                                <span></span>
+                                                            </div>
+                                                            <div class="chat-link">
+                                                                <p class="chat">
+                                                                    get help buying. chat now.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="product-images">
+                                                            <div class="main-img">
+                                                                <img src="" alt="product img"
+                                                                    class="img-fluid product-card-img">
+                                                            </div>
+                                                            <div class="thumbnail-img main-carousel">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <div id="product-card-holder"></div>
+                        <!-- END OF CARD MODAL PAGE -->
+                        <!-- CART MODAL -->
+                        <template id="cart-template">
+                            <div class="modal fade cart-template" id="cart-modal" tabindex="-1"
+                                aria-labelledby="cartModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="cart-overlay">
+                                                            <div class="cart">
+                                                                <ul class="cart-titles">
+                                                                    <li></li>
+                                                                    <li>
+                                                                        <p class="text">price</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="text">qty</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="text">total</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p class="text">delet</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="cart-content">
+                                                                    <!-- Cart item -->
+                                                                    <ul class="cart-items">
+                                                                    </ul>
+                                                                    <!-- End of Cart item -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="items-check">
+                                                <p class="text">grand total</p>
+                                                <p class="text price">$<span class="grand-total total-cart">0</span></p>
+                                                <div class="button">
+                                                    <a href="#" class="btn solid-btn">checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <div id="show-cart"></div>
+                        <!-- END OF CART MODAL -->
+                    </div>
+                </main>
+                <!-- End of Products item -->
+            </div>
+        </div>
+    </section>
+    <!-- End of Products -->
+    <!-- Resourses -->
+    <section class="resourses container nopadding">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="resourses-text">
+                    <div class="button">
+                        <button class="btn plain-btn">next<span><i class="fas fa-arrow-right"></i></span></button>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag"><a href="#">resourses</a></li>
+                    </ul>
+                    <h2 class="title">servise and warranty</h2>
+                    <p class="description">Shop for genuine Beats by Dr. Dre products at an Apple Online Store,
+                        Apple
+                        Retail
+                        Store, or an authorized retailer.</p>
+                    <div class="button">
+                        <a href="#" class="btn plain-btn">view servise and warranty <span class="chevron">
+                                <i class="fas fa-chevron-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="resourses-img">
+                    <img src="assets/images/resourses.jpg" alt="resourses image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Resourses -->
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-item-list">
+                        <ul>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">catalog</a></li>
+                            <li><a href="#">contacts</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">delivery</a></li>
+                            <li><a href="#">faq</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-social">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/footer-logo.png" alt="logo"></a>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-newsletter">
+                        <input type="email" name="email" id="newsletter" placeholder="enter email">
+                        <div class="button">
+                            <a href="#" class="btn plain-btn">subscribe <span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- End of Footer -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/video-player.js"></script>
+    <script src="assets/js/loadJson.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/cardPage.js"></script>
+    <script src="assets/js/addToCart.js"></script>
+    <script src="assets/js/cartPage.js"></script>
+    <script src="assets/js/nouislider.js"></script>
+    <script src="assets/js/flickity.pkgd.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

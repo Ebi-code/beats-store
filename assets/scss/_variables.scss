@@ -1,0 +1,42 @@
+$primeryColor: #0f0f0f;
+$secondColor: rgba(15, 15, 15, 0.6);
+$whiteColor: #fff;
+$bgProduct: #f4f6f8;
+$priceColor: #b671db;
+$staredColor: #ff0030;
+$boxShadow: 6px 0 27px rgba($color: $primeryColor, $alpha: 0.5);
+$transition: all 0.4s ease-in-out;
+
+@mixin flexCenter ($flex){
+    display: $flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexStyle ($alignItems, $justifyContent){
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+@mixin itemCenter() {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeShow {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeHide {
+    0% {opacity: 1;}
+    25% {opacity: 0.75;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.25;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,48 @@
+@import "variables";
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    
+    .carousel-item {
+        position: relative;
+        display: none;
+    }
+    .carousel-item.active {
+        display: block;
+        animation: fadeShow 0.4s;
+    }
+    .control {
+        position: absolute;
+        width: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .next {
+        transform: rotate(90deg);
+        right: 0;
+        span {
+            padding-left: 10px;
+        }
+    }
+    .prev {
+        transform: rotate(90deg);
+        left: 0;
+        span {
+            padding-right: 10px;
+        }
+    }
+    .indicators {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

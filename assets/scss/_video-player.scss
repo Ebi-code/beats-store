@@ -1,0 +1,191 @@
+
+.video-player {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .information {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* padding: 2px 10px; */
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .video-info {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 100;
+        padding: 5px 10px;
+    }
+    .controls-info {
+        position: absolute;
+        display: none;
+        top: 50px;
+        left: 10px;
+        color: blue;
+        font-weight: 600;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .active {
+        display: block;
+    }
+    .video-info:hover {
+        cursor: default;
+    }
+    .video-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-preview {
+        margin: 0 20px;
+    }
+    .small-preview{
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .small-preview img:hover {
+        cursor: pointer;
+    }
+    .player-show {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+    .player-show .top-player {
+        width: 720px;
+        height: 405px;
+    }
+    .video-controls {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        bottom: 0;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .time-control {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .progress {
+        position: relative;
+    }
+    .progress-bg {
+        position: relative;
+        background-color: #fff;
+    }
+    .progress-bar-hover {
+        position: absolute;
+        opacity: 0;
+    }
+    img.video-poster {
+        position: absolute;
+        display: none;
+        right: 0;
+        bottom: 100px;
+        width: 120px;
+        height: 80px;
+    }
+    #progress-bar {
+        position: absolute;
+    }
+    .control-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .show-time, 
+    .remainde-time {
+        color: #fff;
+        margin: 0 10px;
+    }
+    .replay {
+        display: none;
+    }
+    .replay-label {
+        color: #fff;
+    }
+    
+    .time-state {
+        position: absolute;
+        width: 130px;
+        bottom: 20px;
+        left: 0;
+        text-align: center;
+        display: none;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .remainde-time {
+        position: relative;
+    }
+    .remaining-time-update {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .hidden {
+        opacity: 0;
+    }
+    label,
+    button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        margin: 5px;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    label:hover,
+    button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50em;
+        cursor: pointer;
+    }
+    .volumes-element button {
+        transform: rotate(180deg);
+    }
+    
+    .time-control {
+        position: relative;
+    }
+    video.mini-media-player {
+        position: absolute;
+        display: none;
+        width: 150px;
+        height: 85px;
+        bottom: 45px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .volume-range {
+        outline: none;
+    }
+    .volume-range:hover {
+        cursor: pointer;
+        outline: none;
+    }
+    .remainde-time:hover,
+    .show-time:hover {
+        cursor: default;
+    }
+}
